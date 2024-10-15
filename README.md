@@ -4,22 +4,21 @@ Coding Challenge
 
 for the IMS to work on your local machine, you need to have the following installed:
 pyodbc
-time, sys
 
 To install pyodbc, run the following command in your terminal:
 
 ```bash
-pip install pyodbc
+>>pip install pyodbc
 ```
 
 Then create the Schema in your SQL Server Management Studio by running the following command:
 
 ```sql
-CREATE DATABASE Insurance_Management_System;
-GO
-USE Insurance_Management_System;
-GO
-CREATE TABLE [User] (
+>>CREATE DATABASE Insurance_Management_System;
+
+>>USE Insurance_Management_System;
+
+>>CREATE TABLE [User] (
     user_id INT PRIMARY KEY,
     user_name NVARCHAR(255),
     user_password NVARCHAR(255),
@@ -62,6 +61,7 @@ CREATE TABLE Payment (
 ```
 
 There is no-need to change the connection string to your own connection string, as the connection string is already set default to the local machine of the User.
+-- Only change the SQL Server instance
 
 Then run the main.py file in your terminal.
 
