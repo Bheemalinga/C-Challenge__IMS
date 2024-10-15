@@ -4,7 +4,6 @@ Coding Challenge
 
 for the IMS to work on your local machine, you need to have the following installed:
 pyodbc
-time, sys
 
 To install pyodbc, run the following command in your terminal:
 
