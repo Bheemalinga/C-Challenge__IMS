@@ -8,6 +8,7 @@ class InsuranceServiceImpl(IPolicyService):
         self.connection = DBConnection.getConnection()
         if self.connection is None:
             raise Exception("Database connection Unsuccesful")
+            
     def createPolicy(self, policy: Policy):
         try:
             cursor = self.connection.cursor()
