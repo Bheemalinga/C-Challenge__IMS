@@ -4,7 +4,7 @@ from dao.InsuranceServiceImpl import InsuranceServiceImpl
 from entity.Policy import Policy
 from exception.PolicyException import PolicyNotFoundException
 
-class Policy_Management:
+class Policy_ManagementApp:
     def __init__(self):
         self.database_handshake = InsuranceServiceImpl()  # used to interact with the database
 
@@ -125,7 +125,7 @@ class Policy_Management:
 
 
 def main():
-    policy_manager = Policy_Management()
+    policy_manager = Policy_ManagementApp()
     policy_manager.display_menu()
 
 if __name__ == "__main__":
