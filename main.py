@@ -67,7 +67,7 @@ class Policy_Management:
             policies_list = self.database_handshake.getAllPolicies()
 
             if policies_list:
-                print("\nAll Available Policies are as follows:")
+                self.typewriter("\nAll Available Policies are as follows:",speed = 0.01)
                 time.sleep(1)
                 for i,policy in enumerate(policies_list):
                     print(i+1,". ",policy)
